@@ -1,12 +1,16 @@
 import * as React from "react";
 import { Profile } from "../common/models/Profile";
-import { Card, Button, ListGroup, ListGroupItem } from "react-bootstrap";
+import { Card, ListGroup, ListGroupItem } from "react-bootstrap";
 
-const ProfileCard = (profile: Profile) => {
+export interface ProfileProps{
+  profile: Profile
+}
 
+const ProfileCard = (profileProps: ProfileProps) => {
+  const profile = profileProps.profile;
   return (
     <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/50px90" />
+      <Card.Img variant="top" src="https://placeimg.com/100/180/any" />
       <Card.Body>
         <Card.Title>{profile.name}</Card.Title>
       </Card.Body>
