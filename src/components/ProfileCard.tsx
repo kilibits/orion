@@ -10,7 +10,7 @@ const ProfileCard = (profileProps: ProfileProps) => {
   const profile = profileProps.profile;
   return (
     <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="https://placeimg.com/100/180/any" />
+      <Card.Img variant="top" src="https://placeimg.com/100/180/people" />
       <Card.Body>
         <Card.Title>{profile.name}</Card.Title>
       </Card.Body>
