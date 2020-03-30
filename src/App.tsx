@@ -1,4 +1,5 @@
 import React from 'react';
+import * as d3 from 'd3';
 import './App.css';
 import { Route, Switch } from 'react-router'
 import Header from './components/Header';
