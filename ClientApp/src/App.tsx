@@ -7,13 +7,15 @@ import FetchData from './components/FetchData';
 import AboutPage from './components/about/About';
 
 import './custom.css'
+import SearchComponent from './components/visualizations/SearchComponent';
 
 
 export default () => (
     <Layout>
-        <Route exact path='/' component={Home} />
-        <Route path='/counter' component={Counter} />
-        <Route path='/fetch-data/:startDateIndex?' component={FetchData} />
+        <Route exact path='/' component={SearchComponent} />
+        <Route path='/location' component={SearchComponent} />
+        <Route path='/fetch-data/:startDateIndex?' component={SearchComponent} />
         <Route path='/about' component={AboutPage} />
+        <Route path='/map' component={SearchComponent} />
     </Layout>
 );
