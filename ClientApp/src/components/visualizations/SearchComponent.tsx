@@ -7,8 +7,8 @@ const SearchComponent = () => {
     <Container className="searchContainer">
       <Form className="searchForm">
         <FormGroup >
-          <Label className="searchLabel" for="locationSearch">I want to live here ...</Label>
-          <Input className="searchInput" type="email" name="email" id="exampleEmail" placeholder="like: Dodoma, Kinondoni" />
+          <Label className="searchLabel" for="searchInput">I want to live here ...</Label>
+          <Input className="searchInput" type="text" name="email" id="searchInput" placeholder="e.g Dodoma, Kinondoni" />
         </FormGroup>
         <div className="buttonsContainer">
         <Button className="searchButton">Buy</Button>
