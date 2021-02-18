@@ -1,3 +1,36 @@
+.landingSection {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 4rem;
+    max-width: 1200px;
+    width: calc(100% - 4rem);
+    margin: 0 auto;
+    padding: 4rem 0 8rem;
+    color: #102d52
+}
+
+.landingSection>div {
+    animation-fill-mode: both;
+    animation-duration: 450ms;
+    animation-delay: 300ms;
+    animation-iteration-count: 1;
+    opacity: 1;
+    justify-self: center;
+}
+
+.landingSection>p {
+    font-size: 16px;
+    line-height: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+
+.landingSection>div>h1 {
+    font-size: 32px;
+    line-height: 2.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 .searchForm {
     max-width: 500px;
 }
@@ -11,10 +44,21 @@
 }
 
 .searchButton {
-    padding: 4px;
-    background-color: sandybrown;
+    background-color: #ff5859;
     margin: 4px;
     min-width: 100px;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    -webkit-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+    color: #fff;
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
 }
 
 .searchContainer {
@@ -23,7 +67,7 @@
     width: 100%;
     max-width: 650px;
     align-items: center;
-    background-color: rgb(155, 176, 241);
+    background-color: rgb(217, 224, 243);
     border-radius: 5px;
     border-width: 2px;
     padding: 10px;
@@ -34,11 +78,21 @@
     justify-content: center;
 }
 
+.buttonsContainer>div {
+    animation-fill-mode: both;
+    animation-duration: 1500ms;
+    animation-delay: 1500ms;
+    animation-iteration-count: 1;
+    opacity: 1;
+}
+
 .searchLabel {
-    font-size: xx-large;
+    font-size: 18px;
+    line-height: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: 800;
     color: darkslategray;
 }
 
@@ -52,4 +106,13 @@
     border-radius: 50%;
     color: white;
     text-decoration: none;
+}
+
+.landingImageDiv {
+    justify-self: center;
+}
+
+.landingImageDiv>img {
+    max-width: 400px;
+    display: block;
 }
