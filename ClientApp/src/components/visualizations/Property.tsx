@@ -7,8 +7,10 @@ interface IPropertyProps {
   wc: number,
   kitchen: boolean,
   studio?: boolean,
-  ensuite?: boolean
-  
+  ensuite?: boolean,
+  floorPlan?: string //floor plan url
+  images: string //album url
+  location: string
 }
 
 const Property: React.FunctionComponent<IPropertyProps> = (props: IPropertyProps) =>{
